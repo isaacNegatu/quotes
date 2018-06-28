@@ -43,7 +43,7 @@ function appendQuotes(quote){
   let tempQuote = $(`<p>${quote.text}</p>`);
 
   let footer = $('<footer class="blockquote-footer"></footer>');
-  let authorName = $(`<small class="text-muted"><cite title="Author">${quote.auhtor}</cite></small>`);
+  let authorName = $(`<small class="text-muted"><cite title="Author">${quote.author}</cite></small>`);
 
   cardDiv.append(card.append([img,blockquote.append([tempQuote, footer.append(authorName)])]));
 }
